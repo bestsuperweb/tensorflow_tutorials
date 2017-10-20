@@ -4,6 +4,7 @@ from __future__ import print_function
 
 import os
 import urllib
+# import urllib.request --- for python 3
 
 import numpy as np
 import tensorflow as tf
@@ -19,11 +20,15 @@ def main():
   # If the training and test sets aren't stored locally, download them.
   if not os.path.exists(IRIS_TRAINING):
     raw = urllib.urlopen(IRIS_TRAINING_URL).read()
+    # raw = urllib.request.urlopen(IRIS_TRAINING_URL).read() ---  for python 3
+    # with open(IRIS_TRAINING, "wb") as f: --- for python 3
     with open(IRIS_TRAINING, "w") as f:
       f.write(raw)
 
   if not os.path.exists(IRIS_TEST):
     raw = urllib.urlopen(IRIS_TEST_URL).read()
+    # raw = urllib.request.urlopen(IRIS_TEST_URL).read() ---  for python 3
+    # with open(IRIS_TEST, "wb") as f: --- for python 3
     with open(IRIS_TEST, "w") as f:
       f.write(raw)
 
