@@ -9,7 +9,7 @@ These are from tensorflow tutorials in https://www.tensorflow.org/get_started.
 
 ### MNIST For ML Beginners
 
-[`mnist_softmax.py`](https://github.com/bestsuperweb/tensorflow_tutorials/blob/master/mnist_soft.py)
+[`mnist_softmax.py`](https://github.com/bestsuperweb/tensorflow_tutorials/blob/master/mnist_softmax.py)
 
 ### Deep MNIST for Experts
 
